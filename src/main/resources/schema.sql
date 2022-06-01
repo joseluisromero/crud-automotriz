@@ -1,0 +1,49 @@
+--DROP TABLE IF EXISTS  client;
+--DROP TABLE IF EXISTS  vehicle_brand;
+--DROP TABLE IF EXISTS  executive;
+--DROP TABLE IF EXISTS  vehicle;
+--DROP TABLE IF EXISTS  yard_card;
+--
+--CREATE TABLE IF NOT EXISTS client
+--(
+--id UUID not null PRIMARY KEY,
+--identification VARCHAR(255),
+--first_name VARCHAR(255),
+--last_name VARCHAR(255),
+--age Integer ,
+--birth_date DATE,
+--address VARCHAR(255),
+--phone VARCHAR(255),
+--civil_status VARCHAR(255),
+--identification_spouse VARCHAR(255),
+--spouse_name VARCHAR(255),
+--sujet_credit_type VARCHAR(255)
+--);
+--
+--CREATE TABLE IF NOT EXISTS vehicle_brand
+--(
+--id UUID not null PRIMARY KEY,
+--name VARCHAR(255)
+--);
+--
+--CREATE TABLE IF NOT EXISTS yard_card
+--(
+--idCar UUID not null PRIMARY KEY,
+--name VARCHAR(255),
+--address VARCHAR(255),
+--phone VARCHAR(255),
+--number_pdv VARCHAR(255)
+--);
+--
+--CREATE TABLE IF NOT EXISTS executive
+--(
+--id UUID not null PRIMARY KEY,
+--identification VARCHAR(255),
+--first_name VARCHAR(255),
+--last_name VARCHAR(255),
+--address VARCHAR(255),
+--conventional_telephone VARCHAR(255),
+--mobile VARCHAR(255),
+--number_yard_cars VARCHAR(255),
+--age Integer
+--);
